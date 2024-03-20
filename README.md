@@ -5,3 +5,9 @@ Este sitio compone un administrador de Bienes Raíces con las siguientes caracte
 - Model View Controller para la vista de cada página. Se incluyen los modelos de Blog, Autenticación, Paginas públicas, Propiedades y Vendedores
 - Procesador de CSS GULP
 - Composer, optimización de imagenes y PHPMailer
+
+# Instalación
+
+- Arrancar gulp con npm install
+- Ejecutar compilador con npx gulp default
+- Crear build con npx gulp build
