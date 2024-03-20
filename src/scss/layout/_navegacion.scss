@@ -1,0 +1,90 @@
+.derecha{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        align-items: flex-end;
+    }
+
+    .dark-mode-boton{
+        width:3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        filter:invert(100%);
+        &:hover{
+            cursor:pointer;
+        }
+        @include tablet{
+            margin-top:0;
+        }
+    }
+}
+
+.barra{
+    .logo-header{/*codigo agregado para que el logo sea visible en firefox*/
+        max-width: 100%; 
+        width: 28rem;
+        height: auto;
+
+    }
+
+    padding-top:3rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.navegacion{
+    // display:none; /*Para que no aparezca el menu en tamaño mobile*/
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s, opacity 0.5s linear, height 0.5s linear;
+    @include tablet{
+        display: flex;
+        align-items: center;
+        opacity:1;
+        visibility: visible;
+    }
+    a{
+        color:$blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+        @include tablet{
+
+            margin-right:2rem;
+            font-size: 1.8rem;
+            &:last-of-type{
+                margin-right:0;
+            }
+
+        }
+    }
+}
+/*Menu de hamburguesa*/
+
+.mobile-menu{            
+    @include tablet{    
+        display:none;   /*en tablet y desktop no es visible*/
+    }   
+    img{
+        width: 5rem;
+    }
+}
+.mostrar{           /*clase creada con javascript para que*/
+    // display:flex;   /*sea visible el menu desplegable*/
+    // flex-direction: column;
+    // @include tablet{
+    //     flex-direction: row;
+    // }
+    visibility: visible; /*en vez de display:flex*/
+    opacity: 1;
+    height: auto;
+}
+
