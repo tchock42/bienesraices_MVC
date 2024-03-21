@@ -3,7 +3,7 @@
         'name' => 'cuenta/bienesraices_poo',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'dfb699328ca14780a8a68ba2233119d53198423c',
+        'reference' => '12e60e8a88013eafba1319d3918a949dc508a881',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'cuenta/bienesraices_poo' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dfb699328ca14780a8a68ba2233119d53198423c',
+            'reference' => '12e60e8a88013eafba1319d3918a949dc508a881',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
