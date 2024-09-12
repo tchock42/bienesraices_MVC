@@ -1,6 +1,6 @@
 <div class="contenedor-anuncios">
         <?php foreach($propiedades as $propiedad){?>
-            <!-- <?php $resumen = substr($propiedad->descripcion, 0, 100); ?> -->
+            <?php $resumen = substr($propiedad->descripcion, 0, 100); ?>
             <div class="anuncio">
                 <img loading="lazy"  src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="anuncio">
                 <div class="contenido-anuncio">

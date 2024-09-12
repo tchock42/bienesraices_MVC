@@ -1,5 +1,5 @@
 <main class="contenedor seccion contenido-centrado">
-        <h1><?php $blog->titulo ?></h1>
+        <h1><?php echo $blog->titulo; ?></h1>
         
         
             <img loading="lazy" src="/imagenes/blog/<?php echo $blog->imagen; ?>" alt="Imagen de la Propiedad">

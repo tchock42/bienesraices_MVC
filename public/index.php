@@ -40,7 +40,6 @@ $router->get('/blog/actualizarblog', [BlogController::class, 'actualizarblog']);
 $router->post('/blog/actualizarblog', [BlogController::class, 'actualizarblog']); //admin da clic para actualizar entrada
 $router->post('/blog/eliminarblog', [BlogController::class, 'eliminarblog']); //admin elimina entrada
 
-
 //zona publica
 //pagina principal
 $router->get('/', [PaginasController::class, 'index']);
@@ -56,11 +55,9 @@ $router->post('/entrada', [PaginasController::class, 'entrada']); //para enviar 
 $router->get('/blog', [BlogController::class, 'blog']);  //usuarios viualizan blog
 $router->get('/entrada', [BlogController::class, 'entrada']); //usuario visualiza entrada
 
-
 //login y autenticación
 $router->get('/login', [LoginController::class, 'login']);
 $router->post('/login', [LoginController::class, 'login']);
 $router->get('/logout', [LoginController::class, 'logout']);
-
 
 $router->comprobarRutas();
